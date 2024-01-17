@@ -25,7 +25,6 @@ const handler = (req, res) => {
 
 const nextConfig = {
   reactStrictMode: true,
-  allowCors,
 }
 
-module.exports = nextConfig
+module.exports = allowCors(handler)

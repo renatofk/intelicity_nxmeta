@@ -5,6 +5,7 @@ export const register_user = async (formData) => {
         const res = await fetch('http://localhost:3000/api/Auth/register', {
             headers: {
                 'Content-Type': 'application/json',
+                'API-Key' : process.env.DATA_API_KEY
             },
             method: 'POST',
             body: JSON.stringify(formData),
@@ -23,6 +24,7 @@ export const login_user = async (formData) => {
         const res = await fetch('http://localhost:3000/api/Auth/login', {
             headers: {
                 'Content-Type': 'application/json',
+                'API-Key' : process.env.DATA_API_KEY
             },
             method: 'POST',
             body: JSON.stringify(formData),

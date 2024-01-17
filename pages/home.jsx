@@ -7,11 +7,11 @@ import Script from 'next/script';
 export default function Home() {
   const token = Cookies.get('token')
 
-  useEffect(() => {
-    if (!token) {
-      Router.push('/')
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (!token) {
+  //     Router.push('/')
+  //   }
+  // }, [])
 
   const logout = () => {
     Cookies.remove('token')

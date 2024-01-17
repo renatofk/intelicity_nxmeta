@@ -2,7 +2,7 @@
 
 export const register_user = async (formData) => {
     try {
-        const res = await fetch('https://intelicitynxmeta-production.up.railway.app/api/Auth/register', {
+        const res = await fetch('http://localhost:5568/api/Auth/register', {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -20,7 +20,7 @@ export const register_user = async (formData) => {
 
 export const login_user = async (formData) => {
     try {
-        const res = await fetch('https://intelicitynxmeta-production.up.railway.app/api/Auth/login', {
+        const res = await fetch('http://localhost:5568/api/Auth/login', {
             headers: {
                 'Content-Type': 'application/json',
             },
